@@ -23,14 +23,14 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - { role: loranger.debian-python }
+         - { role: cowops.debian-python }
 
 Tasks
 -----
 
   - Install [Python](http://www.python.org/)
   - Install [python-mysqldb](http://mysql-python.sourceforge.net/) MySQL driver
-  
+
 
 License
 -------
