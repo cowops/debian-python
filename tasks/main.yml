@@ -1,6 +1,9 @@
 ---
 - name: install python packages
-  apt: pkg={{ item }} state=latest
-  with_items:
+  apt:
+    name: {{ packages }}
+    state: latest
+  vars:
+    packages:
     - python
     - python-mysqldb
